@@ -1,5 +1,6 @@
 "use strict";
 
+
 /*
 const parsePullRequestId = githubRef => {
   const result = /refs\/pull\/(\d+)\/merge/g.exec(githubRef);
