@@ -25,6 +25,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
+            console.log(context.payload.review_comments_url);
             console.log(context.payload.pull_request);
             console.log(context.payload.review_comments_url);
 
