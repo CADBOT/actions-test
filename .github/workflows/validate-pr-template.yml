@@ -28,7 +28,7 @@ jobs:
             console.log(context.payload.review_comments_url);
             console.log(context.payload.pull_request._links);
             console.log(context.payload.pull_request);
-            console.log(context.payload.review_comments_url);
+            console.log(context.payload.comments_url);
 
             /*
             console.log(context.payload.pull_request._links.review_comments);
