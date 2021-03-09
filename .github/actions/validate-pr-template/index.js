@@ -28,6 +28,7 @@ function parsePullRequestId(githubRef) {
 }
 
 const main = () => {
+  console.log('gihub repositry', process.env.GITHUB_REPOSITORY);
   console.log('github ref: ', process.env.GITHUB_REF);
   console.log('-----');
   const pullRequestId = parsePullRequestId(process.env.GITHUB_REF);
