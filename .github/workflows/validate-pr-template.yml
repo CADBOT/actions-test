@@ -26,13 +26,10 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             console.log('payload', context.payload.pull_request);
-            console.log('keys', Object.keys(context.payload.pull_request));
-            console.log('comment url', Object.keys(context.payload.review_comment_url));
+            console.log('comment url', context.payload.review_comment_url);
             console.log('payload', context.payload.pull_request.review_comments);
-            console.log('review comments', Object.keys(context.payload.pull_request.review_comments));
-            //console.log(context.payload.review_comments_url);
-            //console.log(context.payload.pull_request._links);
-            //console.log(context.payload.pull_request);
+            console.log('links', context.payload.pull_request._links);
+            console.log('review comment links' context.payload._links.review_comments);
 
 
 
