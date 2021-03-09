@@ -29,7 +29,7 @@ jobs:
             console.log('comment url', context.payload.review_comment_url);
             console.log('payload', context.payload.pull_request.review_comments);
             console.log('links', context.payload.pull_request._links);
-            console.log('review comment links' context.payload._links.review_comments);
+            console.log('review comment links', context.payload._links.review_comments);
 
 
 
