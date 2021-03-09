@@ -33,11 +33,14 @@ jobs:
             console.log('review comment links', context.payload.pull_request._links.review_comments.href);
             const commentsUrl = context.payload.pull_request._links.review_comments.href
 
-            const reviewComment0 = await github.request(`${commentsUrl}/0`);
-            const reviewComment1 = await github.request(`${commentsUrl}/1`);
+            //const reviewComment0 = await github.request(`${commentsUrl}/0`);
+            //const reviewComment1 = await github.request(`${commentsUrl}/1`);
 
-            console.log(reviewComment0);
-            console.log(reviewComment1);
+            //console.log(reviewComment0);
+            //console.log(reviewComment1);
+
+            const res = await github.request(commentsUrl);
+            console.log(res);
 
 
 
