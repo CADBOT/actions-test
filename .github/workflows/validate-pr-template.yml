@@ -25,7 +25,8 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const creator = context.payload.sender.login
+            console.log(context.payload.pull_request);
+            /*
             console.log(context.payload.pull_request._links.review_comments);
             console.log(context.payload.pull_request._links.review_comment);
             console.log(context.payload.pull_request);
@@ -34,6 +35,7 @@ jobs:
             const reviewComment1 = await github.request(`${context.payload._links.review_comments}/0`);
             console.log('0 :', reviewComment0);
             console.log('1 :', reviewComment1);
+            */
 
 
 
