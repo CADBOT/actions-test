@@ -1,0 +1,5 @@
+name: validate-pr-template
+description: Validates that the first PR comment is filled out properly
+runs:
+  using: node12
+  main: index.js
